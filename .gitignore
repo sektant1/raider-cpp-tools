@@ -1,0 +1,63 @@
+# -----------------------
+# Python cache / bytecode
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------
+# Virtual environments
+# -----------------------
+.venv/
+venv/
+ENV/
+env/
+
+# -----------------------
+# Packaging / build output
+# -----------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# -----------------------
+# Test / coverage
+# -----------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# -----------------------
+# Type checkers / linters
+# -----------------------
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# -----------------------
+# IDEs / editors
+# -----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -----------------------
+# OS junk
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Project-specific outputs
+# -----------------------
+
+# If you ever run in-place and it creates logs
+*.log
+

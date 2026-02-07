@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raider"
+version = "0.1.0"
+description = "Mythic raider grade CLI tool for C++/CMake/clang (build/test/fmt/tidy/deps)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Gabriel Fernandes" }]
+
+dependencies = [  
+	"cmake>=3.20",
+  	"ninja>=1.10",
+    "gitpython>=3.1"
+]
+
+[project.scripts]
+raider = "raider.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
